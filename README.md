@@ -27,6 +27,7 @@ The exact problem formulation is in the [pdf file](/presentazione-progetto-api20
 ## How to use
 The main program is in [highway.c](/highway.c).
 Once compiled with gcc, the program can be launched and the interaction is via command line.
+For the exact descrption of the five possible commands, refer to the [pdf file](/presentazione-progetto-api2023.pdf).
 
 The course offered also a certain number of open test to check the correctness of the solution. The 100 open tests are in the file [archivio_test_aperti.rar](archivio_test_aperti.rar). The other code file [highway_opentests.c](highway_opentests.c) can be used with these files.
 The open tests must be stored in a folder named "archivio_test_aperti", and the folder must be in the same folder as the .c file. If the code is compiled and executed, it executes the program on all 100 open tests and checks if there is some difference with the expected output.
