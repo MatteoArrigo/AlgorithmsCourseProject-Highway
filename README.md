@@ -12,4 +12,17 @@ We had to implement the five methods to handle the highway:
   * Remove a car of given capacity from a certain station of the highway (if the station exists and has a car with that capacity).
   * Calculate the path from a starting station to an ending station which is the shortest in relation to the number of station passed.
     In case of multiple paths of same length, a rule of proximity of stations to the beginning of the highway is applied.
-The exact problem formulation is in the [pdf file](/"Presentazione PFAPI 2022-2023.pdf")
+The exact problem formulation is in the [pdf file](/presentazione-progetto-api2023.pdf) (italian version)
+
+## Tecnology used
+ * Language C, compiled with gcc
+ * Use of Makefile to compile
+ * gdb ad debugger
+ * Address SANitizer (ASAN), used with option -fsanitize=address, to locate memory issues
+ * Valgrind, used with "valgrind" command, to locate memory issues and other possible problems
+ * Callgrind, used with "valgrind --tool=callgrind" command, examined with "kcachegrind", to measure time performance
+ * Massif, used with "valgrind --tool=massif", examined with "massif-visualizer", to measure memory performance
+
+## How to use
+All the program is in the main [file .c](/highway.c).
+Once compiled with gcc, the program can be launched and the interaction is via command line.
